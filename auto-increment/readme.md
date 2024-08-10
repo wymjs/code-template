@@ -1,5 +1,7 @@
-自增值
+auto-increment
 ===
+
+> 自增值
 
 ```typescript
 // 數字版(就數字自增而已)
