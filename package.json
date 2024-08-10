@@ -1,8 +1,8 @@
 {
-  "name": "toolbox",
+  "name": "@wymjs/code-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "lint": "eslint --fix --no-ignore --max-warnings=0",
     "format": "prettier --cache --write",
