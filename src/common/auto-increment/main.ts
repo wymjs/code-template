@@ -1,13 +1,13 @@
-type AutoIncrementInstance<T extends string | number> = {
+export type AutoIncrementInstance<T extends string | number> = {
   value: T
   next(): T
 }
 
-const a_z = 'abcdefghijklmnopqrstuvwxyz'
-const A_Z = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-const A_z = a_z + A_Z
+export const a_z = 'abcdefghijklmnopqrstuvwxyz'
+export const A_Z = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+export const A_z = a_z + A_Z
 
-function autoIncrement<T extends string | number>(n: T): AutoIncrementInstance<T> {
+export function autoIncrement<T extends string | number>(n: T): AutoIncrementInstance<T> {
   if (typeof n === 'number') {
     return {
       value: n,
@@ -52,5 +52,3 @@ function autoIncrement<T extends string | number>(n: T): AutoIncrementInstance<T
     },
   }
 }
-
-export { type AutoIncrementInstance, a_z, A_Z, A_z, autoIncrement }

@@ -1,12 +1,12 @@
-type Done = () => void
+export type Done = () => void
 
-type CallbackWatcher = {
+export type CallbackWatcher = {
   complete: null | (() => void)
   done: Done
   go: () => Done
 }
 
-const createCallbackWatcher = (): CallbackWatcher => {
+export const createCallbackWatcher = (): CallbackWatcher => {
   let runningTaskNum = 0
   let finishedTaskNum = runningTaskNum
 
@@ -31,10 +31,4 @@ const createCallbackWatcher = (): CallbackWatcher => {
   }
 
   return result
-}
-
-export {
-  type Done,
-  type CallbackWatcher,
-  createCallbackWatcher,
 }
