@@ -1,4 +1,4 @@
-const rangeLoopAsync = async <T>(
+export const rangeLoopAsync = async <T>(
   list: T[] = [],
   range = 20,
   tap?: (rangeList: T[]) => Promise<void>
@@ -14,7 +14,7 @@ const rangeLoopAsync = async <T>(
   }
 };
 
-const rangeLoop = <T>(
+export const rangeLoop = <T>(
   list: T[] = [],
   range = 20,
   tap?: (rangeList: T[]) => void
@@ -29,5 +29,3 @@ const rangeLoop = <T>(
     }
   }
 };
-
-export { rangeLoop, rangeLoopAsync };
